@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+var tprice,dprice,n;
+
+document.write("<h3 style='color:skyblue'>");
+n=parseInt(window.prompt("enter no of tickets:"));
+document.write("Number of tickets ="+n);
+tprice=n*150;
+
+document.write("<h3 style='color:red'>");
+document.write("Total price without discount: "+tprice);
+dprice=tprice-((tprice*10)/100);
+
+document.write("<h3 style='color:green'>");
+document.write("Total price including 10% discount: "+dprice);
+
+</script>
+</head>
+</html>
