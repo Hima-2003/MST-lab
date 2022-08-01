@@ -1,0 +1,59 @@
+<!-- 3.b)Write JavaScript code to display the movie details such as movie name, starring,
+language, and ratings. Initialize the variables with values of appropriate types. Use
+template literals wherever necessary.-->
+
+<html>
+<head>
+<script>
+var mv,st,rt,l,i;
+document.write("<table border=3 align='center' bgcolor='skyblue' style='width:100%'>");
+document.write("<tr>");
+	document.write("<td>");
+	document.write("<h3>Movie Name<h3>");
+	document.write("</td>");
+	document.write("<td>");
+	document.write("<h3>Hero,Heroine Names<h3>");
+	document.write("</td>");
+	document.write("<td>");
+	document.write("<h3>Rating<h3>");
+	document.write("</td>");
+	document.write("<td>");
+	document.write("<h3>Language<h3>");
+	document.write("</td>");
+	document.write("</tr>");
+for(i=1;i<3;i++)
+{
+	document.write("<tr>");
+	document.write("<td>");
+	mv=window.prompt("enter movie name :");
+	document.write("</td>");
+	document.write("<td>");
+	st=window.prompt("enter Hero,Heroine Names :");
+	document.write("</td>");
+	document.write("<td>");
+	rt=window.prompt("enter rating :");
+	document.write("</td>");
+	document.write("<td>");
+	l=window.prompt("enter language :");
+	document.write("</td>");
+	document.write("</tr>");
+
+	document.write("<tr>");
+	document.write("<td>");
+	document.write(mv+"<br>");
+	document.write("</td>");
+	document.write("<td>");
+	document.write(st+"<br>");
+	document.write("</td>");
+	document.write("<td>");
+	document.write(rt+"<br>");
+	document.write("</td>");
+	document.write("<td>");
+	document.write(l+"<br>");
+	document.write("</td>");
+	document.write("</tr>");
+}
+document.write("</table>");
+</script>
+</head>
+</html>
