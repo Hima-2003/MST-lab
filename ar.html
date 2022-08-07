@@ -1,0 +1,80 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+<script>
+//using fixed values
+names=['HIMA','CSE','C'];
+document.write(names+"<br>");
+document.write(names[0]+"<br>");
+
+
+//another way to acess elements using id
+document.getElementById("demo").innerHTML=names[0];
+
+
+//adding new element at end
+names[3]='20761A05G6';
+document.write("After adding element:"+"<br>"+names+"<br>");
+
+
+//adding element at any position
+names[2]='B';
+document.write(names+"<br>");
+
+
+//to remove an element at the end of an array
+names.pop();
+document.write(names+"<br>");
+
+
+//to remove an element at the begin of an array
+names.shift();
+document.write(names+"<br>");
+
+
+//to remove an element at any position of an array
+delete names[0];
+document.write(names+"<br>");
+
+//to remove some portion of elements from array
+arr=['girl','child','boy','amma','dad'];
+arr.splice(1,3);
+document.write(arr+"<br>");
+
+//to remove some portion and  replace with other
+arr=['girl','child','boy','amma','dad'];
+arr.splice(1,3,'hi','mam');
+document.write(arr+"<br>");
+
+//to slice elements from array
+arr=['girl','child','boy','amma','dad'];
+document.write(arr.slice(1,3)+"<br>");
+
+//concat elements in an array
+a=[1,2];
+document.write(a.concat([3,4],[5,6])+"<br>");
+document.write(a.concat([3,4],5,6)+"<br>");
+
+//push an elements at end of an array
+a=[11,12,13,14];
+a.push(15,16,17);
+document.write(a+"<br>");
+
+//unshift an elements at begin of an array
+a=[11,12,13,14];
+a.unshift(15,16,17);
+document.write(a+"<br>");
+
+//join method 
+a=[11,12,13,14];
+document.write(a.join(".")+"<br>");
+
+//sort method 
+var a=[110,12,131,104];
+b=Number(a);
+document.write(typeof(b)+"<br>");
+document.write(b.sort()+"<br>");
+</script>
+</body>
+
+</html>
