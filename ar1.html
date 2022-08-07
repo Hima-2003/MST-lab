@@ -1,0 +1,66 @@
+<html>
+<head>
+<script language ="javascript">
+var n;
+n=parseInt(window.prompt("enter no of branches"));
+branch=new Array(n);
+document.write("no of branches:"+n+"<br>");
+for(i=0;i<branch.length;i++)
+{
+branch[i]=window.prompt("enter branch names");
+document.write(branch[i]+"<br>");
+}
+
+//join method
+ss=branch.join("-");
+document.write(ss+"<br><br>");
+
+//sort method
+document.write(branch.sort()+"<br>");
+
+//to remove an element at the end of an array
+branch.pop();
+document.write(branch+"<br>");
+
+//to remove an element at the begin of an array
+branch.shift();
+document.write(branch+"<br>");
+
+
+//to remove an element at any position of an array
+delete branch[0];
+document.write(branch+"<br>");
+
+//to remove some portion of elements from array
+//arr=['girl','child','boy','amma','dad'];
+branch.splice(1,3);
+document.write(branch+"<br>");
+
+//to remove some portion and  replace with other
+//arr=['girl','child','boy','amma','dad'];
+//branch.splice(1,3,'hi','mam');
+document.write(branch.splice(1,3,'hi','mam')+"<br>");
+
+//to slice elements from array
+//arr=['girl','child','boy','amma','dad'];
+document.write(branch.slice(1,3)+"<br>");
+
+//concat elements in an array
+//a=[1,2];
+document.write(branch.concat([3,4],[5,6])+"<br>");
+document.write(branch.concat([3,4],5,6)+"<br>");
+
+//push an elements at end of an array
+//a=[11,12,13,14];
+branch.push(15,16,17);
+document.write(branch+"<br>");
+
+//unshift an elements at begin of an array
+//a=[11,12,13,14];
+branch.unshift(15,16,17);
+document.write(branch+"<br>");
+
+
+</script>
+</head>
+</html>
