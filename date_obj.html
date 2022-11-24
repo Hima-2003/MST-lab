@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+// destructing of arrays
+var names=["alpha","beta","gama","delta"]
+var firstname=names[0];
+var lastname=names[3];
+console.log(firstname);
+console.log(lastname);
+
+const numbers=[1,2,3];
+const[one,two,three]=numbers;
+console.log(one);
+console.log(two);
+console.log(three);
+//creation of date object
+const days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+
+var d=new Date();
+document.write("<font color='green'>");
+document.write(d);
+document.write("</font>");
+//using getdate method
+var day=d.getDay();
+document.write("<br>"+"<font color='red'>");
+document.write("day is "+day+" "+days[day]);
+
+var y=d.getFullYear();
+document.write("<br>"+"<font color='red'>");
+document.write("year is "+y);
+
+var m=d.getMonth();
+document.write("<br>"+"<font color='red'>");
+document.write("month is:"+(m+1));
+
+var t=d.getTime();
+document.write("<br>"+"<font color='red'>");
+document.write("time is:"+t);
+
+var h=d.getHours();
+document.write("<br>"+"<font color='red'>");
+document.write("hour is:"+h);
+
+var m1=d.getMinutes();
+document.write("<br>"+"<font color='red'>");
+document.write("minute is:"+m1);
+
+</script>
+</head>
+</html>
